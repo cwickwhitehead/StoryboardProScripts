@@ -15,7 +15,7 @@ Version: 0.2.0
 Website: chadwickw.com
 -------------------------------------------------------------------------------
 */
-function UnlinkedShared() {
+function UnlinkShared() {
 	const SM = new SelectionManager();
 	const panels = SM.getPanelSelection();
 	if (panels.length <= 0) return;
