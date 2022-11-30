@@ -25,10 +25,10 @@ function UnlinkShared() {
 	// Open Undo scope
 	scene.beginUndoRedoAccum("Unlinked Shared Drawings");
 
-	for (let p = 0; p < panels.length; p++) {
+	for (var p = 0; p < panels.length; p++) {
 		const panel = panels[p];
 		SM.setCurrentPanel(panel);
-		for (let i = LM.numberOfLayers(panel) - 1; i >= 0; i--) {
+		for (var i = LM.numberOfLayers(panel) - 1; i >= 0; i--) {
 			const layerName = LM.layerName(panel, i);
 			const selectedLayer = new Array(0);
 			selectedLayer[0] = {
