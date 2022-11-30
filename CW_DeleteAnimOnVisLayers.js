@@ -26,10 +26,10 @@ function DeleteAnimOnVisLayers() {
 	// Open Undo scope
 	scene.beginUndoRedoAccum("Delete Animation on Visible Layers");
 
-	for (let p = 0; p < panels.length; ++p) {
+	for (var p = 0; p < panels.length; ++p) {
 		const panel = panels[p];
 
-		for (let layer = LM.numberOfLayers(panel) - 1; layer >= 0; --layer) {
+		for (var layer = LM.numberOfLayers(panel) - 1; layer >= 0; --layer) {
 			if (LM.layerVisibility(panel, layer) == true) {
 				SM.setCurrentPanel(panel);
 				Action.perform("onActionGoToFirstFrame()");
