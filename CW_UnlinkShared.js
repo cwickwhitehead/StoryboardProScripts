@@ -8,14 +8,14 @@ Usage: Select panels then launch the script.
         
 Author: Chadwick Whitehead bashed this together using bits from scripts by Lori Sponagle, Corey Barnes and Karl Olson.
 
-Created: 2022/11/22
+Created: 2022/12/21
 
-Version: 0.2.0
+Version: 0.2.1
 
 Website: chadwickw.com
 -------------------------------------------------------------------------------
 */
-function UnlinkShared() {
+function CW_UnlinkShared() {
 	const SM = new SelectionManager();
 	const panels = SM.getPanelSelection();
 	if (panels.length <= 0) return;
